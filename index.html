@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="3dhover/style3d.css">
     <title>Henry Hrra</title>
 </head>
 
@@ -39,17 +40,20 @@
                     <div class="header-img-container col-lg-4 offset-lg-3">
                         <img class="header-img" src="images/IMG_20201102_163546.png" alt="">
                     </div>
+                    <!-- <img class="header-img img-fluid mx-auto" src="images/IMG_20201102_163546.png"
+                        alt=""> -->
                 </div>
                 <div class="row">
-                    <div class="header-content col-lg-10 offset-lg-1">
+                    <div class="header-content col-lg-10 mx-auto">
                         <h1 class="text-center">Henry Herera</h1>
                         <h6 class="text-center">Frond end Designer | Developer</h6>
                     </div>
                 </div>
             </div>
         </div>
+
     </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -62,13 +66,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" href="#">Personal Information</a>
+                        <a class="nav-link active" href="#Resume">Resume</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" href="#">Resume</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active" href="#">Portafolio</a>
+                        <a class="nav-link active" href="#Portafolio">Portafolio</a>
                     </li>
                 </ul>
             </div>
@@ -76,77 +77,143 @@
     </nav>
 
     <main>
-        <section class="container-fluid ">
-            <div class="row mt-4 PerInfo-Container">
-                <div class="PerInfo">
+        <section class="container-fluid " id="Resume">
+            <div class="row resume">
+                <h2 class="text-center">Resume</h2>
+            </div>
+            <div class="row mt-4 ">
+                <div class="PerInfo card">
                     <h2 class="text-center">Personal Information</h2>
-                    <ul>
+                    <ul class="row gy-4 mt-4 content">
                         <li>
-                            <p>Name: Henry Arnodlo Herrera Chávez</p>
+                            <p><i class="bi bi-person-fill"></i> Name: Henry Arnoldo Herrera Chávez</p>
                         </li>
                         <li>
-                            <p>Email: henryhrra@gmail.com</p>
+                            <p><i class="bi bi-envelope-fill"></i> Email: henryhrra@gmail.com</p>
                         </li>
                         <li>
-                            <p>Phone: +503 7589-3341</p>
+                            <p><i class="bi bi-github"></i> GitHub: <a
+                                    href="https://github.com/henryhrra">https://github.com/henryhrra</a></p>
                         </li>
                         <li>
-                            <p>Country: El Salvador</p>
+                            <p><i class="bi bi-linkedin"></i> Linkedin: <a
+                                    href="https://www.linkedin.com/in/henry-hrra/">https://www.linkedin.com/in/henry-hrra/</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><i class="bi bi-telephone-fill"></i> Phone: +503 7589-3341</p>
+                        </li>
+                        <li>
+                            <p><i class="bi bi-geo-alt-fill"></i> Country: El Salvador</p>
                         </li>
                     </ul>
                 </div>
-                <div class="PerInfo">
-                    <h2 class="text-center">My Skills </h2>
-                    <ul>
-                        <li>
+                <div class="PerInfo row">
+                    <div class="row ">
+                        <h2 class="text-center">My Skills</h2>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-5 m-auto top-effect">
                             <div>
-                                <spam>HTML/CSS</spam>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 90%">90%</div>
-                                  </div>
+                                <span>
+                                    <img class="img-fluid mx-auto"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                                        alt="">
+                                    <p class="text-center">HTML</p>
+                                </span>
+                                <span>
+                                    <p class="text-center">
+                                        HTML stands for HyperText Markup Language. It is a standard markup language for
+                                        web page creation.
+                                    </p>
+                                </span>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="col-lg-5 m-auto top-effect">
                             <div>
-                                <spam>Bootstrap</spam>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 70%">70%</div>
-                                  </div>
+                                <span>
+                                    <img class="img-fluid mx-auto"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                                        alt="">
+                                    <p class="text-center">CSS</p>
+                                </span>
+                                <span>
+                                    <p class="text-center">
+                                        CSS stands for Cascading Style Sheets language and is used to stylize elements
+                                        written in a markup language such as HTML.
+                                    </p>
+                                </span>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 m-auto left-effect">
                             <div>
-                                <spam>JavaScript</spam>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 85%">85%</div>
-                                  </div>
+                                <span>
+                                    <img class="img-fluid mx-auto"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                                        alt="">
+                                    <p class="text-center">JavaScript</p>
+                                </span>
+                                <span>
+                                    <p class="text-center">
+                                        CSS stands for Cascading Style Sheets language and is used to stylize elements
+                                        written in a markup language such as HTML.
+                                    </p>
+                                </span>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="col-lg-5 m-auto right-effect">
                             <div>
-                                <spam>TypeScript</spam>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 40%">40%</div>
-                                  </div>
+                                <span>
+                                    <img class="img-fluid mx-auto"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+                                        alt="">
+                                    <p class="text-center">TypeScript</p>
+                                </span>
+                                <span>
+                                    <p class="text-center">
+                                        CSS stands for Cascading Style Sheets language and is used to stylize elements
+                                        written in a markup language such as HTML.
+                                    </p>
+                                </span>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 m-auto bottom-effect">
                             <div>
-                                <spam>MySQL</spam>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 65%">65%</div>
-                                  </div>
+                                <span>
+                                    <img class="img-fluid mx-auto"
+                                        src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png"
+                                        alt="">
+                                    <p class="text-center">MySQL</p>
+                                </span>
+                                <span>
+                                    <p class="text-center">
+                                        CSS stands for Cascading Style Sheets language and is used to stylize elements
+                                        written in a markup language such as HTML.
+                                    </p>
+                                </span>
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="col-lg-5 m-auto bottom-effect">
                             <div>
-                                <spam>Java</spam>
-                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 85%">85%</div>
-                                  </div>
+                                <span>
+                                    <img class="img-fluid mx-auto"
+                                        src="https://static.vecteezy.com/system/resources/previews/022/100/945/original/java-logo-transparent-free-png.png"
+                                        alt="">
+                                    <p class="text-center">Java</p>
+                                </span>
+                                <span>
+                                    <p class="text-center">
+                                        CSS stands for Cascading Style Sheets language and is used to stylize elements
+                                        written in a markup language such as HTML.
+                                    </p>
+                                </span>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class=" PerInfo">
                     <h2 class="text-center">Education </h2>
@@ -174,13 +241,20 @@
             </div>
 
         </section>
+        <section id="Portafolio">
+            <div class="portafolio d-flex">
+                <h4 class="m-auto">this is under construction</h4>
+            </div>
+        </section>
     </main>
     <footer>
+        <i class="fa-brands fa-html5"></i>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="3dhover/script.js"></script>
 </body>
 
 </html>
