@@ -53,6 +53,7 @@
         </div>
 
     </header>
+    <spam id="Resume"></spam>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -66,7 +67,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" href="#Resume">Resume</a>
+                        <a class="nav-link active" id="navResume" href="#Resume">Resume</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link active" href="#Portafolio">Portafolio</a>
@@ -76,14 +77,15 @@
         </div>
     </nav>
 
-    <main>
-        <section class="container-fluid " id="Resume">
-            <div class="row resume">
-                <h2 class="text-center">Resume</h2>
+    <main >
+        
+        <section class="container-fluid " >
+            <div class="row resume mt-4">
+                <h2 class="text-center" >Resume</h2>
             </div>
             <div class="row mt-4 ">
                 <div class="PerInfo card">
-                    <h2 class="text-center">Personal Information</h2>
+                    <h2 class="text-center content">Personal Information</h2>
                     <ul class="row gy-4 mt-4 content">
                         <li>
                             <p><i class="bi bi-person-fill"></i> Name: Henry Arnoldo Herrera Chávez</p>
@@ -108,9 +110,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="PerInfo row">
+                <div class="PerInfo bg-opacity skills-bg">
                     <div class="row ">
-                        <h2 class="text-center">My Skills</h2>
+                        <h2 class="text-center content">My Skills</h2>
                     </div>
                     <div class="row mt-4">
                         <div class="col-lg-5 m-auto top-effect">
@@ -215,7 +217,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" PerInfo">
+                <div class=" PerInfo bg-opacity education-bg">
                     <h2 class="text-center">Education </h2>
                     <ul>
                         <li>
@@ -255,6 +257,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="3dhover/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

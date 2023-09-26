@@ -42,23 +42,30 @@ body {
     color: white
 }
 
-.header-content h1 {
-    font-size: 5em;
+.header-content h1  {
+    font-size: 3vw;
 }
 
 .header-content h6 {
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 
 .header-img {
-    width: 20em;
-    height: 20em;
+    width: 15vw;
+    height: 15vw;
     background-color: rgb(143, 132, 136, .5);
     border: 0.4em black solid;
     border-radius: 100%;
 }
-
-.PerInfo, .portafolio {
+.nav-link{
+    font-size:1.5em ;
+}
+.nav-link:hover{
+    height: 100%;
+    background: rgb(143, 132, 136, .5);
+}
+.PerInfo,
+.portafolio {
     width: 25vw;
     height: auto;
     background: whitesmoke;
@@ -66,14 +73,52 @@ body {
     margin: 0 auto;
     border-radius: 5%;
 }
-.resume{
-    padding-top: 5em;
+.PerInfo h2{
+    color: black;
+    text-shadow: 0.1em 0.1em white;
 }
-.portafolio{
+
+.bg-opacity{
+    position: relative;
+}
+.education-bg::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background-image: url("https://www.velents.com/wp-content/uploads/2023/07/633f2e5893a3770858fc37e6_crime-analyst-job-description-3993x5989-20201128.jpeg"); */
+    background-image:url("https://media.istockphoto.com/id/665695876/photo/graduating-man-back.jpg?s=170667a&w=0&k=20&c=8FKj4l_C466zkqX5V1m69WH3aijQhcZTSivN86ahM8w=");
+    background-size: cover;
+    border-radius: 5%;
+    opacity: 0.2;
+}
+.skills-bg p{
+    font-size: 0.9vw;
+}
+.skills-bg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background-image: url("https://www.velents.com/wp-content/uploads/2023/07/633f2e5893a3770858fc37e6_crime-analyst-job-description-3993x5989-20201128.jpeg"); */
+    background-image:
+        linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.9)),
+        url("https://www.velents.com/wp-content/uploads/2023/07/633f2e5893a3770858fc37e6_crime-analyst-job-description-3993x5989-20201128.jpeg");
+    background-size: cover;
+    border-radius: 5%;
+    opacity: 0.2;
+}
+
+.portafolio {
     margin-top: 5em;
     width: 60em;
     height: 50em;
 }
+
 /*.PerInfo:hover {
     background: white;
     transform: scale(1.1);
@@ -104,14 +149,14 @@ body {
 .top-effect div span:first-child,
 .left-effect div span:first-child,
 .right-effect div span:first-child,
-.bottom-effect div span:first-child{
+.bottom-effect div span:first-child {
     display: inline-block;
 }
 
 .top-effect div,
 .left-effect div,
 .right-effect div,
-.bottom-effect div{
+.bottom-effect div {
     display: block;
     position: relative;
     overflow: hidden;
@@ -120,7 +165,7 @@ body {
 .top-effect div span:last-child,
 .left-effect div span:last-child,
 .right-effect div span:last-child,
-.bottom-effect div span:last-child{
+.bottom-effect div span:last-child {
     position: absolute;
     top: 0;
     right: 0;
@@ -132,37 +177,44 @@ body {
     transform: translateY(100%);
 }
 
-.left-effect div span:last-child{
+.left-effect div span:last-child {
     transform: translateX(100%);
 }
-.right-effect div span:last-child{
+
+.right-effect div span:last-child {
     transform: translateX(-100%);
 }
-.bottom-effect div span:last-child{
+
+.bottom-effect div span:last-child {
     transform: translatey(-100%);
 }
+
 .top-effect div span,
 .left-effect div span,
 .right-effect div span,
-.bottom-effect div span{
+.bottom-effect div span {
     transition: transform 0.2s ease-out;
 }
 
 .top-effect div:hover span:first-child {
     transform: translateY(-100%);
 }
+
 .left-effect div:hover span:first-child {
     transform: translateX(-100%);
 }
+
 .right-effect div:hover span:first-child {
     transform: translateX(100%);
 }
+
 .bottom-effect div:hover span:first-child {
     transform: translateY(100%);
 }
+
 .top-effect div:hover span:last-child,
 .left-effect div:hover span:last-child,
 .right-effect div:hover span:last-child,
-.bottom-effect div:hover span:last-child{
+.bottom-effect div:hover span:last-child {
     transform: none;
 }
